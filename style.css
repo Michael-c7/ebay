@@ -29,3 +29,12 @@
 body {
     font-family: 'Open Sans', sans-serif;
 }
+
+li {
+    list-style-type: none;
+}
+
+img {
+    display:block;
+    max-width:100%;
+}

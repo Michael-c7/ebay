@@ -1,19 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,700&display=swap');
 
 :root {
-    /*color scheme*/
+    /*color scheme
+    - from lightest color to darkest*/
     --white-000:#FFFFFF;
-    --blue-000:#3665F3;
+    --white-050:#eee;
+    
     --gray-000:#767676;
-
-    --purple:#500750;
-    --orange:#B03005;
-    --lime-green:#C9E43B;
+    
+    --blue-000:#3665F3;
+    --purple-000:#500750;
+    --orange-000:#B03005;
+    --lime-green-000:#C9E43B;
 
     --cyan-000:#C2F2EF;
     --cyan-050:#0ABFCA;
     --cyan-150:#01718F;
     --cyan-200:#003147;
+
+
+    /*layout*/
+    --standard-border:1px solid #eee;
 }
 
 
@@ -37,4 +44,121 @@ li {
 img {
     display:block;
     max-width:100%;
+}
+
+
+
+
+
+
+
+
+
+/*header*/
+.header {
+    /* background:rgba(255, 0, 0, 0.1); */
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:13px;
+    padding:0.5rem 1.5rem;
+    border-bottom:var(--standard-border);
+}
+
+
+
+.header__items-1 {
+    /* background:rgba(255, 0, 0, 0.2); */
+    display:flex;
+    font-size:1em;
+}
+
+.header__item {
+    margin:0 0.85rem;
+    text-decoration: none;
+}
+
+.header__item__link,
+.header__item__link-2 {
+    text-decoration: none;
+}
+
+.header__item__link:hover,
+.header__item__link-2:hover {
+    text-decoration: underline;
+}
+
+.header__item__link {
+    color:#000;
+}
+
+.header__item__link:hover {
+    text-decoration: underline;
+}
+
+.header-icon-bell,
+.header-icon-shopping-cart {
+    font-size:1.5em;
+}
+
+.watchlist-popout-box,
+.my-ebay-items,
+.notification-popup-box,
+.cart-popup-box {
+    display:none;
+}
+
+
+
+
+
+
+/*main content*/
+.main-content-container {
+    /* background:rgba(255, 0, 0, 0.151); */
+    position:relative;
+}
+
+.main-content {
+    /* background:rgba(36, 189, 16, 0.451); */
+    position:relative;
+    width:70%;
+    margin:0 auto;
+    
+    
+}
+
+.main-content__header {
+    /* background:rgba(183, 16, 189, 0.250); */
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding:1.5rem 0;
+    border-bottom:var(--standard-border);
+}
+
+.main-content__header__img-logo {
+    /* background:rgba(255, 0, 0, 0.227); */
+    position: absolute;
+    width:250px;
+    height:200px;
+    clip-path:inset(23% 53% 53% 0%);
+    /* object-fit: cover;
+    object-position: center center; */
+    /* top:-37px; */
+    left:1rem;
+
+}
+
+.shop-by-category {
+    margin-left:0rem;
+}
+
+.shop-by-category__menu {
+    display:none;
+}
+
+.search-container {
+    display:flex;
 }

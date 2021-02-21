@@ -132,33 +132,115 @@ img {
     /* background:rgba(183, 16, 189, 0.250); */
     position:relative;
     display:flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items:center;
-    padding:1.5rem 0;
+    padding:0.5rem 0;
     border-bottom:var(--standard-border);
 }
 
 .main-content__header__img-logo {
-    /* background:rgba(255, 0, 0, 0.227); */
-    position: absolute;
-    width:250px;
-    height:200px;
-    clip-path:inset(23% 53% 53% 0%);
-    /* object-fit: cover;
-    object-position: center center; */
-    /* top:-37px; */
-    left:1rem;
-
+    /* background:rgba(255, 0, 0, 0.200); */
+    position: relative;
+    /* clip-path:inset(23% 53% 53% 0%); */
+    transform: scale(0.6);
 }
 
-.shop-by-category {
-    margin-left:0rem;
+
+.shop-by-category__btn {
+    /*background-color:rgba(255, 0, 0, 0.500);*/
+    border:none;
+    background:none;
+
+    display:flex;
+    justify-content: center;
+    align-items:center;
+
+    padding:0.25rem;
+    cursor: pointer;
 }
+
+
+
+.shop-by-category__btn__text {
+    display:inline-block;
+    /*ch === character / letters*/
+    width:9ch;
+}
+
+.shop-by-category__btn__icon {
+    font-size:1.75rem;
+}
+
 
 .shop-by-category__menu {
     display:none;
 }
 
+
+
 .search-container {
+    position: relative;
     display:flex;
+    justify-content: center;
+    align-items:center;
+    background:red;
+    height:3rem;
+    border:2px solid #000;
+}
+
+
+.searchbar-container {
+    background:rgba(0, 247, 255, 0.589);
+    position: relative;
+    height:100%;
+}
+
+.searchbar-container__icon {
+    position: absolute;
+    left:5%;
+    top:50%;
+    transform:translateY(-50%);
+    color:#000;
+}
+
+.searchbar__input {
+    border:none;
+    min-width:5rem;
+    width:25rem;
+    height:100%;
+
+    /* background:red; */
+}
+
+.searchbar__input::placeholder {
+    padding-left:2rem;
+}
+
+.select-menu-container,
+.select-menu {
+    position: relative;
+    height:100%;
+    border:none;
+}
+
+.select-menu {
+    border-left:1px solid rgb(165, 165, 165);
+}
+
+
+.search-btn {
+    border:none;
+    height:3rem;
+    background-color:var(--blue-000);
+    color:#fff;
+    padding:0.5rem;
+    margin:0 0.5rem 0 0.25rem;
+
+    min-width:5rem;
+    width:10rem;
+}
+
+.advanced-search-link {
+    text-decoration: none;
+    font-size:0.75rem;
 }

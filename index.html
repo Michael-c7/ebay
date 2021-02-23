@@ -225,12 +225,12 @@
 
                         <div class="select-menu-container">
                             <select class="select-menu" name="" id="">
-                                <option value="0">All Categories</option>
-                                <option value="1">antiques</option>
-                                <option value="2">Art</option>
-                                <option value="3">Baby</option>
-                                <option value="4">Books</option>
-                                <option value="5">Business and industrial</option>
+                                <option class="select-menu__option" value="0">All Categories</option>
+                                <option class="select-menu__option" value="1">antiques</option>
+                                <option class="select-menu__option" value="2">Art</option>
+                                <option class="select-menu__option" value="3">Baby</option>
+                                <option class="select-menu__option" value="4">Books</option>
+                                <option class="select-menu__option" value="5">Business and industrial</option>
                             </select>
                         </div>
                     </div>
@@ -245,49 +245,71 @@
                 <!--end of main-content__header-->
 
 
-                <div>
+
+
+
+                <div class="product-items-container">
+                    <!-- 10 total links w/ unique dropdowns -->
                     <ul class="product-items">
-                        <li class="product-items">Home</li>
-                        <li class="product-items">
-                            <i class="fa fa-heart" aria-hidden="true"></i>
-                            <span>Saved</span>
+                        <li class="product-item"><button class="product-item__topic">Home</button></li>
+                        <li class="product-item product-item-saved">
+                            <i class="fa fa-heart product-item-icon" aria-hidden="true"></i>
+                            <button class="product-item__topic">Saved</button>
                         </li>
-                        <!-- 10 total links w/ unique dropdowns -->
                         <li class="product-item">
-                            <a class="product-item__link" href="#">Motor</a>
-                            <div class="product-item__dropdown-menu">
-                                <ul>
-                                    <li><h4>Parts & Accessories</h4></li>
-                                    <li><a href="#">All Parts & Accessories</a></li>
-                                    <li><a href="#">Car & truck parts</a></li>
-                                    <li><a href="#">Motorcycle parts</a></li>
-                                </ul>
+                            <button class="product-item__topic">Motors</button>
 
-                                <ul>
-                                    <li><h4>Vehicles</h4></li>
-                                    <li><a href="#">Cars & trucks</a></li>
-                                    <li><a href="#">Classics</a></li>
-                                    <li><a href="#">Motorcycles</a></li>
-                                </ul>
-
-                                <img src="./images/motor.jpg" alt=""/>
+                            <div class="product-item__menu">
+                                <a class="product-item__link" href="#">Motor</a>
+                                <div class="product-item__dropdown-menu">
+                                    <ul>
+                                        <li><h4>Parts & Accessories</h4></li>
+                                        <li><a href="#">All Parts & Accessories</a></li>
+                                        <li><a href="#">Car & truck parts</a></li>
+                                        <li><a href="#">Motorcycle parts</a></li>
+                                    </ul>
+    
+                                    <ul>
+                                        <li><h4>Vehicles</h4></li>
+                                        <li><a href="#">Cars & trucks</a></li>
+                                        <li><a href="#">Classics</a></li>
+                                        <li><a href="#">Motorcycles</a></li>
+                                    </ul>
+    
+                                    <img src="./images/motor.jpg" alt=""/>
+                                </div>
                             </div>
+
                         </li>
-                        
+                        <li class="product-item"><button class="product-item__topic">Fashion</button></li>
+                        <li class="product-item"><button class="product-item__topic">Electronics</button></li>
+                        <li class="product-item"><button class="product-item__topic">Collectibles & Art</button></li>
+                        <li class="product-item"><button class="product-item__topic">Home & Garden</button></li>
+                        <li class="product-item"><button class="product-item__topic">Sporting Goods</button></li>
+                        <li class="product-item"><button class="product-item__topic">Toys</button></li>
+                        <li class="product-item"><button class="product-item__topic">Business & Industrial</button></li>
+                        <li class="product-item"><button class="product-item__topic">Music</button></li>
+                        <li class="product-item"><button class="product-item__topic">Deals</button></li>
                     </ul>
                 </div>
 
+
+
+
+                
                 <div class="hero-carousel-container">
                     <div class="hero-carousel">
                         <ul class="hero-carousel__slides">
-                            <li class="hero-carousel__slide">
+                            <li class="hero-carousel__slide hero-slide-1">
                                 <!--img as background img on the parent li-->
-                                <h2>Free listings? Jackpot!</h2>
-                                <h3>Your first 200 are free every month</h3>
-                                <button class="btn-type-1 learn-more-btn">
-                                    <span>Learn more</span>
-                                    <i class="fa fa-arrow-right" aria-hidden="true"></i>
-                                </button>
+                                <div class="hero-carousel__slide__text">
+                                    <h2>Free listings? Jackpot!</h2>
+                                    <h3>Your first 200 are free every month</h3>
+                                    <button class="btn-type-1 learn-more-btn">
+                                        <span>Learn more</span>
+                                        <i class="fa fa-arrow-right btn-type-1__icon" aria-hidden="true"></i>
+                                    </button>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -299,6 +321,9 @@
                         -->
                     </button>
                 </div>
+
+
+
 
 
                 <section class="coupon-banner">

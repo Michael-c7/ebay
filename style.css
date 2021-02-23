@@ -329,69 +329,55 @@ img {
 
 
 /*hero carousel*/
-.hero-carousel-container {
-    background:rgba(255, 0, 0, 0.37);
-    position: relative;
-    width:100%;
-    height:20rem;
-}
-
 .hero-carousel {
-    background:rgba(9, 255, 0, 0.37);
+    background:rgba(190, 44, 44, 0.603);
     position: relative;
     width:100%;
-    height:100%;
-
+    height:15rem;
 }
 
 .hero-carousel__slides {
+    background:rgba(44, 190, 51, 0.603);
     position: relative;
-    height:100%;
+    width:inherit;
+    height:inherit;
 }
 
 .hero-carousel__slide {
-    background:rgba(195, 0, 255, 0.493);
-    position:absolute;
-    width:100%;
+    background:rgba(44, 185, 190, 0.5);
+    position: absolute;
+    width:inherit;
     height:100%;
-    /* background-position: center;
-    background-repeat:none;
-    background-size:cover; */
-}
-
-/* .hero-slide-1 {
-    background-image: url("./images/hero-carousel-images/banner-game-1.webp");
-    background-position: top;
-} */
-
-.hero-slide-1 {
     display:grid;
-    grid-template-columns:1fr 3fr;
-
-    background:red;
+    grid-template-columns:1fr 2.5fr;
 }
 
 
 .hero-carousel__slide__text {
-    background:rgba(84, 177, 30, 0.759);
-    /* width:30%; */
-    height:100%;
+    background-color:#500750;
+    padding:1.5rem;
+    color:#fff;
 }
 
-.hero-carousel__slide__images {
-    position: relative;
+.learn-more-btn {
+    margin-top:1rem;
+}
+
+.hero-carousel__slide__text__heading-1 {
+    
+}
+
+
+.hero-carousel__slide__imgs {
+    background:rgb(226, 33, 97);
     display:grid;
-    grid-template-columns:1fr 1fr 1fr;
-    background:blue;    
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
 }
 
-.hero-carousel__slide__image {
-    position: relative;
+.hero-carousel__slide__img {
+    background:rgba(33, 62, 226, 0.603);
     height:100%;
-    object-fit:cover;
-    object-position:center center;
-}
-
-.play-pause-btn {
-    position: absolute;
+    object-fit: cover;
+    object-position: center left;
 }

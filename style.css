@@ -334,6 +334,99 @@ img {
 
 /*hero carousel*/
 .hero-carousel {
+    background-color:rgba(238, 235, 208, 1);
+    position: relative;
+    height:25rem;
+    overflow: hidden;
+}
+
+.hero-carousel__slides {
+    background-color: rgb(230, 86, 134);
+    position: relative;
+    height:100%;
+    /*transition the slide based on the translateX 
+    EG: first slide at translateX(-100%), slide 2 at -200%, ect...*/
+    transform:translateX(-0%);
+    transition: transform 0.5s ease;
+}
+
+.hero-carousel:hover .carousel-slide-btn {
+    transition:opacity 1.5s ease;
+    opacity:1;
+}
+
+
+.carousel-slide-btn {
+    background-color:rgba(255, 255, 255, 0.8);
+    border:none;
+    position: absolute;
+    font-size:1.75rem;
+    width:35px;
+    height:35px;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.75);
+    transition: background-color 0.25s ease;
+    transition:opacity 0.5s ease-out;
+    z-index:10;
+    opacity:0;
+}
+
+.carousel-slide-btn:hover {
+    background-color:gray;
+    cursor: pointer;
+}
+
+.carousel-slide-btn:hover .carousel-slide-btn__icon {
+    color:#fff;
+    cursor: pointer;
+}
+
+
+.carousel-slide-btn__icon {
+    position: relative;
+}
+
+
+.prev-btn {
+    left:1%;
+    top:50%;
+    transform:translate(-1%,-50%);
+}
+
+.prev-btn .carousel-slide-btn__icon {
+    left:-1px;
+}
+
+.next-btn {
+    left:99%;
+    top:50%;
+    transform:translate(-99%,-50%);
+}
+
+.next-btn .carousel-slide-btn__icon {
+    left:1px;
+}
+
+
+
+.slide {
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+.slide-1 {
+    background-color:rgb(225, 127, 255); 
+}
+
+.slide-2 {
+    background-color:rgb(157, 32, 196);
+    /* left:100%; */
+    transform:translateX(100%);
+}
+
+
+/* .hero-carousel {
     background:rgba(190, 44, 44, 0.603);
     position: relative;
     width:100%;
@@ -354,6 +447,15 @@ img {
     height:100%;
     display:grid;
     grid-template-columns:1fr 2.25fr;
+}
+
+.hero-carousel__slide-2 {
+    background:rgba(219, 16, 16, 0.918);
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:1frr;
 }
 
 
@@ -396,14 +498,14 @@ img {
 
 .hero-carousel__slide__img {
     background:rgba(33, 62, 226, 0.603);
-    /* height:100%; */
-    /* object-fit: cover;
-    object-position: center left; */
-}
+    
+    object-fit: cover;
+    object-position: center left;
+} */
 
 
 /*hero slide variation*/
-.slide-text-type-1 {
+/* .slide-text-type-1 {
     position: relative;
     background-color:var(--orange-000);
 }
@@ -432,4 +534,34 @@ img {
 
 .hero-carousel__slide-2__img {
     width:100%;
+}
+
+
+.hero-slide-4__text {
+    background-color: transparent;
+}
+
+.hero-carousel__slide__slide-4 {
+
+} */
+
+/* .hero-carousel__slide {
+    background:rgba(44, 185, 190, 0.5);
+    position: absolute;
+    width:100%;
+    height:100%;
+    display:grid;
+    grid-template-columns:1fr 2.25fr;
+} */
+
+
+
+
+
+/*coupon banner*/
+
+.coupon-banner {
+    position: relative;
+    background-color:rgba(87, 196, 223, 0.603);
+    /* margin-top:1rem; */
 }
